@@ -6,8 +6,8 @@
           Zapisy
         </div>
         <div class="headerIcon">
-          <ion-icon ios="ios-calendar" md="md-calendar"></ion-icon>
-          <ion-icon ios="ios-help" md="md-help"></ion-icon>
+          <ion-icon (click)="calendary" ios="ios-calendar" md="md-calendar"></ion-icon>
+          <ion-icon (click)="help" ios="ios-help" md="md-help"></ion-icon>
         </div>
       </div>
     </ion-title>
@@ -15,10 +15,10 @@
 </ion-header>
 
 <ion-content padding>
-  <div class="FBox">
+  <div class="FBox" *ngIf="closeNews == true">
     <div class="SBox">
       Zapisy
-      <ion-icon id="close" ios="ios-close" md="md-close"></ion-icon>
+      <ion-icon (click)="CloseStatement()" id="close" ios="ios-close" md="md-close"></ion-icon>
     </div>
     <div class="UnderSBox"><br>
       Rosyjski To Bardzo Sympatyczny Język
