@@ -1,3 +1,50 @@
 page-about {
-
+  .MainHeader {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+    font-size: 36px;
+  }
+  .header {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+  }
+  .headerIcon {
+    justify-content: space-around;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+  }
+  .FBox {
+    border-radius: 15px;
+    -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.45);
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.45);
+    height: auto;
+    width: 90%;
+  }
+  .SBox {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 24px;
+    height: 30%;
+    width: 100%;
+  }
+  #close {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    padding-right: 10px;
+    flex-direction: row;
+  }
+  .UnderSBox {
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
 }
