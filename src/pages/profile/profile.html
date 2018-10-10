@@ -17,7 +17,7 @@
             <span class="content-list-position">
                 <ion-label color="dark" class="content-list-position-text">Email: </ion-label>
                 <button class="content-list-position-text-value-main">
-                    <ion-label class="content-list-position-text-value">sf{{i?.email}}</ion-label>
+                    <ion-label class="content-list-position-text-value">filip@cos.io{{i?.email}}</ion-label>
                     <label class="content-list-position-text-info">Naciśnij żeby zmienić.</label>
                 </button>
             </span>
@@ -30,13 +30,13 @@
                     <button class="content-list-position-text-value-main">
                         <ion-label color="dark" class="content-list-position-text-value">
                             <span *ngIf="passwordchanger == true">*********</span>
-                            <span *ngIf="passwordchanger == false">{{i?.password}}</span>
+                            <span *ngIf="passwordchanger == false">Nwm{{i?.password}}</span>
                         </ion-label>
                         <label class="content-list-position-text-info">Naciśnij żeby zmienić.</label>
                     </button>
                 </span>
                 <div class="password-button-main">
-                    <button (click)="passwordChangerButton()" class="password-button">Pokaż<br>hasło</button>
+                    <button ion-button (click)="passwordChangerButton()" class="password-button">Pokaż<br>hasło</button>
                 </div>
             </div>
         </div>
