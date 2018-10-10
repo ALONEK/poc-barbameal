@@ -13,7 +13,8 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'profile.html',
 })
 export class ProfilePage {
-  passwordchanger: boolean = true;
+  passwordshow: boolean = true;
+  passwordChange: boolean = false;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -22,7 +23,11 @@ export class ProfilePage {
     console.log('ionViewDidLoad ProfilePage');
   }
 
-  passwordChangerButton() {
-    this.passwordchanger = !this.passwordchanger;
+  passwordChangeButton() {
+    this.passwordChange = !this.passwordChange;
+  }
+
+  passwordShowButton() {
+    this.passwordshow = !this.passwordshow;
   }
 }
