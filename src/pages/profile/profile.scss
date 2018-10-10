@@ -10,16 +10,40 @@ page-profile {
         overflow: auto;
         box-shadow: 10px 10px 5px -6px rgb(41, 41, 41);
       }
-      .change-div-position {
-        width: 260px;
+    .change-div-position {
+        width: 270px;
         height: 220px;
         position: relative;
         overflow: auto;
         display: flex;
-        justify-content: center;
+        flex-direction: column; 
         align-items: center;
-        background: rgba(85, 85, 85, 0.5);
-      }
+        background: rgba(0, 0, 0, 0.8);
+        border-radius: 15px;
+        box-shadow: 4px 4px 19px 0px rgba(89,89,89,0.59);
+    }
+    .password-change-buttons-div {
+
+    }
+    .password-change-content {
+        height: 170px;
+        width: 200px;
+        overflow: auto;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+    .password-change-textarea {
+        height: 120px;
+    }
+    .password-change-head {
+        color: #eeeeee;
+    }
+    .password-change-button {
+        font-size: 13px;
+        height: 30px;
+        width: 50px;
+    }
     .head {
         height: 160px;
     }

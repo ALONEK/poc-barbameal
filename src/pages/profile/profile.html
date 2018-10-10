@@ -1,8 +1,16 @@
 <ion-content>
     <div class="password-change-style" *ngIf="passwordChange == true">
         <div class="change-div-position">
-            <button ion-button (click)="passwordChangeButton()">Anuluj</button>
-            <button ion-button (click)="passwordChangeButton()">Zapisz</button>
+            <div class="password-change-content">
+                <h2 class="password-change-head">Zmiana hasła</h2>
+                <div class="password-change-textarea">
+
+                </div>
+            </div>
+            <div class="password-change-buttons-div">
+                <button class="password-change-button" ion-button (click)="passwordChangeButton()">Anuluj</button>
+                <button class="password-change-button" ion-button (click)="passwordChangeButton()">Zapisz</button>
+            </div>
         </div>
     </div>
     <div>
