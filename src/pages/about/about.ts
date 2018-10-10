@@ -7,14 +7,18 @@ import { NavController } from "ionic-angular";
 })
 export class AboutPage {
   closeNews: boolean = true;
-  constructor(public navCtrl: NavController) {}
+  myDate: number;
+
+  constructor(public navCtrl: NavController) {
+    this.myDate = Date.now();
+  }
   // ###Header###
   help() {}
   calendary() {}
   // ###statement###
   CloseStatement() {
     this.closeNews = !this.closeNews;
-    console.log("dupa");
   }
   // ###Weeks###
+  null() {}
 }

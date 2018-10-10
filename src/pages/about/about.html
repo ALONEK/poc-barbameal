@@ -6,8 +6,8 @@
           Zapisy
         </div>
         <div class="headerIcon">
-          <ion-icon (click)="calendary" ios="ios-calendar" md="md-calendar"></ion-icon>
-          <ion-icon (click)="help" ios="ios-help" md="md-help"></ion-icon>
+          <ion-icon (click)="calendary()" ios="ios-calendar" md="md-calendar"></ion-icon>
+          <ion-icon (click)="help()" ios="ios-help" md="md-help"></ion-icon>
         </div>
       </div>
     </ion-title>
@@ -24,4 +24,15 @@
       Rosyjski To Bardzo Sympatyczny Język
     </div>
   </div>
+  <div class="Week">
+    Dzisiaj<br>
+    <ion-label>
+      {{ myDate | date:'dd - MM - yy' }}
+    </ion-label>
+    Jutro<br>
+
+
+
+  </div>
+
 </ion-content>
