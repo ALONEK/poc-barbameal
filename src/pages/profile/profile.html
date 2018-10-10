@@ -1,18 +1,57 @@
-<!--
-  Generated template for the ProfilePage page.
+<ion-content>
+    <div class="head">
+        <div class="head-head">
+            Profil
+        </div>
+        <div class="photo">
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
+        </div>
+    </div>
+    <div class="content">
 
-  <ion-navbar>
-    <ion-title>Profil</ion-title>
-  </ion-navbar>
+        <div class="content-list">
+            <ion-label color="dark" class="content-list-position"><span>Filip{{i?.name}}</span> <span>{{i?.surrname}}</span></ion-label>
+        </div>
 
-</ion-header>
+        <div class="content-list">
+            <span class="content-list-position">
+                <ion-label color="dark" class="content-list-position-text">Email: </ion-label>
+                <button class="content-list-position-text-value-main">
+                    <ion-label class="content-list-position-text-value">sf{{i?.email}}</ion-label>
+                    <label class="content-list-position-text-info">Naciśnij żeby zmienić.</label>
+                </button>
+            </span>
+        </div>
 
+        <div class="content-list">
+            <div class="password-checker">
+                <span class="content-list-position">
+                    <ion-label color="dark" class="content-list-position-text">Hasło: </ion-label>
+                    <button class="content-list-position-text-value-main">
+                        <ion-label color="dark" class="content-list-position-text-value">
+                            <span *ngIf="passwordchanger == true">*********</span>
+                            <span *ngIf="passwordchanger == false">{{i?.password}}</span>
+                        </ion-label>
+                        <label class="content-list-position-text-info">Naciśnij żeby zmienić.</label>
+                    </button>
+                </span>
+                <div class="password-button-main">
+                    <button (click)="passwordChangerButton()" class="password-button">Pokaż<br>hasło</button>
+                </div>
+            </div>
+        </div>
 
-<ion-content padding>
+        <div class="content-list">
+            <span class="content-list-position">
+                <ion-label color="dark" class="content-list-position-text-seccond">Barbacan{{i?.work}}</ion-label>
+            </span>
+        </div>
+
+        <div class="content-list">
+            <span class="content-list-position">
+                <ion-label color="dark" class="content-list-position-text-seccond">Barba_app{{i?.dontknowwhat}}</ion-label>
+            </span>
+        </div>
+    </div>
 
 </ion-content>
