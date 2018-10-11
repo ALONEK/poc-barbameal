@@ -20,5 +20,5 @@ export class AboutPage {
     this.closeNews = !this.closeNews;
   }
   // ###Weeks###
-  null() {}
+  SwipeWeek(e) {}
 }
