@@ -53,7 +53,10 @@
                         </button>
                     </span>
                     <div class="password-button-main">
-                        <button ion-button (click)="passwordShowButton()" class="password-button">Pokaż<br>hasło</button>
+                        <button (click)="passwordShowButton()" class="password-button">
+                            <ion-icon name="eye" *ngIf="passwordshow == true"></ion-icon>
+                            <ion-icon name="eye-off" *ngIf="passwordshow == false"></ion-icon>
+                        </button>
                     </div>
                 </div>
             </div>

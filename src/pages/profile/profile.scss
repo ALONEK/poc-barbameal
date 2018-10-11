@@ -11,8 +11,8 @@ page-profile {
         box-shadow: 10px 10px 5px -6px rgb(41, 41, 41);
       }
     .change-div-position {
-        width: 270px;
-        height: 220px;
+        width:90%;
+        height: 250px;
         position: relative;
         overflow: auto;
         display: flex;
@@ -26,7 +26,7 @@ page-profile {
 
     }
     .password-change-content {
-        height: 170px;
+        height: 200px;
         width: 200px;
         overflow: auto;
         display: flex;
@@ -40,9 +40,10 @@ page-profile {
         color: #eeeeee;
     }
     .password-change-button {
-        font-size: 13px;
-        height: 30px;
+        font-size: 11px;
+        height: 27px;
         width: 50px;
+        border-radius: 10px;
     }
     .head {
         height: 160px;
@@ -125,5 +126,6 @@ page-profile {
     }
     .password-button {
         font-size: 13px;
+        background-color: rgba(0, 0, 0, 0);
     }
 }
