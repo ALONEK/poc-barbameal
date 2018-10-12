@@ -1,4 +1,7 @@
 page-profile {
+    .profile {
+        height: 100%;
+    }
     .password-change-style {
         display: flex;
         justify-content: center;
@@ -7,12 +10,17 @@ page-profile {
         background: rgba(126, 125, 125, 0.5);
         width: 100%;
         height: 100%;
-        overflow: auto;
-        box-shadow: 10px 10px 5px -6px rgb(41, 41, 41);
-      }
+    }
+    .password-change-position {
+        width: 90%;
+        position: relative;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
     .change-div-position {
-        width:90%;
-        height: 250px;
+        max-width: 450px;
+        padding: 10px;
         position: relative;
         overflow: auto;
         display: flex;
@@ -27,7 +35,6 @@ page-profile {
     }
     .password-change-content {
         height: 200px;
-        width: 200px;
         overflow: auto;
         display: flex;
         flex-direction: column; 
@@ -35,6 +42,7 @@ page-profile {
     }
     .password-change-textarea {
         height: 120px;
+        margin: 0;
     }
     .password-change-head {
         color: #eeeeee;
@@ -46,14 +54,23 @@ page-profile {
         border-radius: 10px;
     }
     .head {
-        height: 160px;
+        height: 40%;
+    }
+    .photo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .photo-position {
+        
     }
     .head-head {
         height: 30px;
         border-bottom: 3px;
-        margin: 17px;
+        margin: 5%;
+        margin-left: 6%;
         margin-bottom: 0;
-        font-size: 20px;
+        font-size: 6vw;
         font-weight: bold;
     }
     .password-checker {
@@ -103,8 +120,12 @@ page-profile {
     .content-list-position-text-value {
         margin: 0;
         padding: 0;
+        width: 100%;
         font-weight: bold;
         font-size:  18px;
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px solid #aaaaaa;
     }
     .content-list-position-text-value-main {
         margin: 0;

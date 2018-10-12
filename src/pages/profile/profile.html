@@ -1,25 +1,30 @@
-<ion-content>
+<ion-content class="profile">
     <div class="password-change-style" *ngIf="passwordChange == true">
-        <div class="change-div-position">
-            <div class="password-change-content">
-                <h2 class="password-change-head">Zmiana hasła</h2>
-                <div class="password-change-textarea">
+        <div class="password-change-position">
+            <div class="change-div-position">
+                <div class="password-change-content">
+                    <h2 class="password-change-head">Zmiana hasła</h2>
+                    <div class="password-change-textarea">
 
+                    </div>
                 </div>
-            </div>
-            <div class="password-change-buttons-div">
-                <button class="password-change-button" ion-button (click)="passwordChangeButton()">Anuluj</button>
-                <button class="password-change-button" ion-button (click)="passwordChangeButton()">Zapisz</button>
+                <div class="password-change-buttons-div">
+                    <button class="password-change-button" ion-button (click)="passwordChangeButton()">Anuluj</button>
+                    <button class="password-change-button" ion-button (click)="passwordChangeButton()">Zapisz</button>
+                </div>
             </div>
         </div>
     </div>
-    <div>
+
+    <div class="profile">
         <div class="head">
             <div class="head-head">
                 Profil
             </div>
             <div class="photo">
-
+                <div class="photo-position">
+                    <ion-icon name="warning"></ion-icon>
+                </div>
             </div>
         </div>
         <div class="content">
