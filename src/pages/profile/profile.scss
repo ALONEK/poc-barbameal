@@ -57,12 +57,14 @@ page-profile {
         height: 40%;
     }
     .photo {
+        height: 100%;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .photo-position {
-        
+        border-radius: 100%;
     }
     .head-head {
         border-bottom: 3px;
