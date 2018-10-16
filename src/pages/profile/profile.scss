@@ -69,7 +69,7 @@ page-profile {
         margin: 5%;
         margin-left: 6%;
         margin-bottom: 0;
-        font-size: 6vw;
+        font-size: 2.3rem;
         font-weight: bold;
     }
     .password-checker {
@@ -87,7 +87,7 @@ page-profile {
         margin: 0;
         padding: 0;
         height: 60px;
-        font-size:  18px;
+        font-size:  1.9rem;
         border-bottom: 1px solid #eeeeee;
         padding-left: 17px;
         display: flex;
@@ -105,11 +105,12 @@ page-profile {
         display: flex;
         align-items: center;
         font-weight: bold;
-        font-size:  25px;
+        font-size:  2.4rem;
     }
     .content-list-position-text {
         margin: 0;
-        padding: 0;
+        padding-top: 3%;
+        padding-bottom: 3%;
         width: 60px;
     }
     .content-list-position-text-seccond {
@@ -121,7 +122,7 @@ page-profile {
         padding: 0;
         width: 100%;
         font-weight: bold;
-        font-size:  18px;
+        font-size:  1.8rem;
         display: flex;
         flex-direction: row;
         border-bottom: 1px solid #aaaaaa;
@@ -145,7 +146,7 @@ page-profile {
         padding-right: 20px;
     }
     .password-button {
-        font-size: 13px;
+        font-size: 1.3rem;
         background-color: rgba(0, 0, 0, 0);
     }
 }
