@@ -6,9 +6,12 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
+  searchBar: boolean = false;
 
   constructor(public navCtrl: NavController) {
 
   }
-
+  searchBarView() {
+    this.searchBar = !this.searchBar;
+  }
 }

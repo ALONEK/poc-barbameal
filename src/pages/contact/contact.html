@@ -1,17 +1,32 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Contact
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+<ion-content class="events">
+  <div class="head">
+    <div class="head-head">
+      Wydarzenia
+    </div>
+  </div>
 
-<ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
-    </ion-item>
-  </ion-list>
+  <div class="contentt">
+    <div class="week">
+      <div class="week-head">
+        W tym tygodniu
+      </div>
+    </div>
+
+    <div class="soon">
+      <div class="soon-head">
+        W najbliższym czasie
+      </div>
+      <div class="soon-position">
+        <div class="soon-content">
+          <div class="soon-content-img">
+            <span class="soon-span-header">#tak{{i?.event}}</span>
+          </div>
+
+          <div>
+            {{i?.img}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </ion-content>

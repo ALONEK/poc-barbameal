@@ -1,11 +1,73 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      About
+      <div class="MainHeader">
+        <div class="header">
+          Zapisy
+        </div>
+        <div class="headerIcon">
+          <ion-icon (click)="calendary()" ios="ios-calendar" md="md-calendar"></ion-icon>
+          <ion-icon (click)="help()" ios="ios-help" md="md-help"></ion-icon>
+        </div>
+      </div>
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
+  <div class="FBox" *ngIf="closeNews == true">
+    <div class="SBox">
+      Zapisy
+      <ion-icon (click)="CloseStatement()" id="close" ios="ios-close" md="md-close"></ion-icon>
+    </div>
+    <div class="UnderSBox"><br>
+      Rosyjski To Bardzo Sympatyczny Język
+    </div>
+  </div>
+
+  <div class="Week">
+    <div id="Day">
+      Dzisiaj
+      <span>{{ myDate | date:'dd - MM - yy' }}</span>
+    </div>
+    <div id="Day">
+      Jutro<br>
+    </div>
+    <div id="Day">
+      pojutrze
+    </div>
+    <div id="Day">
+      i tam daje
+      xD
+    </div>
+    <div id="Day">
+      Ok Ok
+    </div>
+    <div id="Day">
+      Ok
+    </div>
+    <div id="Day">
+      Oke ehh
+    </div>
+  </div>
+
+  <div class="EntriesEvent">
+    <div id="Event">
+      <h3>Śniadanie</h3>
+
+    </div>
+    <div>
+      <h3>Kanapki</h3><br>
+      <div id="Event">
+        No Spoczko
+        <ion-icon id="CheckBox" ios="ios-square-outline" md="md-square-outline"></ion-icon>
+        <ion-icon ios="ios-checkbox" md="md-checkbox"></ion-icon>
+      </div>
+    </div>
+    <div id="Event">
+      <h3>Obiad</h3>
+    </div>
+  </div>
+
 
 </ion-content>
