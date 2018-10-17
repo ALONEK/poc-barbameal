@@ -31,12 +31,12 @@ events-week {
     margin-bottom: 3%;
   }
 
-  .swiper-pagination {
+  .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
     position: absolute;
     bottom: 0;
   }
 
-  .swiper-container {
+  .swiper-container-android .swiper-slide, .swiper-wrapper {
     margin-bottom: 5rem;
   }
 }
