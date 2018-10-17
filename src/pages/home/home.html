@@ -1,10 +1,24 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title></ion-title>
-  </ion-navbar>
-</ion-header>
+<ion-content>
+  <div *ngIf="searchBar == true" class="search-bar">
+    <ion-searchbar class="search-bar-style" [(ngModel)]="myInput" [showCancelButton]="shouldShowCancel" (ionInput)="onInput($event)"
+      (ionCancel)="onCancel($event)">
+    </ion-searchbar>
+  </div>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
+  <div class="head">
+    <div class="head-head">
+      <div class="hed-positon-elements">
+        <div class="head-text">
+          Aktualności
+        </div>
+
+        <ion-icon (click)="searchBarView()" name="search"></ion-icon>
+      </div>
+    </div>
+  </div>
+
+  <div class="body">
+    <ion-icon (click)="searchBarView()" name="search"></ion-icon>
+  </div>
 
 </ion-content>
