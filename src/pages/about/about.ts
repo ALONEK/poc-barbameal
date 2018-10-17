@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { NavController } from "ionic-angular";
+import { NavController, Toggle, Checkbox } from "ionic-angular";
 
 @Component({
   selector: "page-about",
@@ -7,6 +7,7 @@ import { NavController } from "ionic-angular";
 })
 export class AboutPage {
   closeNews: boolean = true;
+  toggleCheckBox: boolean = false;
   myDate: number;
 
   constructor(public navCtrl: NavController) {
@@ -21,4 +22,8 @@ export class AboutPage {
   }
   // ###Weeks###
   SwipeWeek(e) {}
+  // ###Event###
+  Agree() {
+    this.toggleCheckBox = !this.toggleCheckBox;
+  }
 }
