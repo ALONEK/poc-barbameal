@@ -1,32 +1,42 @@
 events-week {
-    .week-position {
-        width: 100%;
-        display: flex;
-        flex: 1;
-        overflow: scroll;
-    }
+  .week-position {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    overflow: scroll;
+  }
 
-    .week-content {
-        height: 100%;
-        width: 75%;
-    }
+  .week-content {
+    display: flex;
+    flex: 1;
+    width: 100%;
+  }
 
-    .week-content-img {
-        padding: 5%;
-        justify-content: flex-end;
-        align-items: flex-start;
-        display: flex;
-        flex-direction: column;
-        background: rgba(0, 0, 0, 0.3);
-        width: 30vh;
-        height: 30vh;
-        color: #ffffff;
-        border-radius: 3%;
-    }
-    
-    .week-span-header {
-        font-size: 6vw;
-        font-weight: bold;
-        margin-bottom: 3%;
-    }
+  .week-content-img {
+    padding: 5%;
+    justify-content: flex-end;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.3);
+    width: 30vh;
+    height: 30vh;
+    color: #ffffff;
+    border-radius: 3%;
+  }
+
+  .week-span-header {
+    font-size: 6vw;
+    font-weight: bold;
+    margin-bottom: 3%;
+  }
+
+  .swiper-pagination {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .swiper-container {
+    margin-bottom: 5rem;
+  }
 }
