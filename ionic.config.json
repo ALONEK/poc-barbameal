@@ -1,5 +1,6 @@
 {
   "name": "poc-barbameal",
   "integrations": {},
-  "type": "ionic-angular"
+  "type": "ionic-angular",
+  "app_id": ""
 }
