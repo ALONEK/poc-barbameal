@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, transition, animate } from "@angular/core";
 import { NavController, Toggle, Checkbox } from "ionic-angular";
 
 @Component({
