@@ -107,6 +107,7 @@ page-about {
     padding-top: 10px;
     flex-direction: row;
     font-size: 48px;
+    animation: fadeIn 1s ease-in;
   }
   #CheckBoxFalse {
     display: flex;
