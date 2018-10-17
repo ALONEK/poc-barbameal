@@ -11,62 +11,60 @@
 
 
 
-
-  <ion-content>
-    <div class="Position" *ngIf="closeNews == true">
-      <div class="FBox">
-        <div class="SBox">
-          Zapisy
-          <ion-icon (click)="CloseStatement()" id="close" ios="ios-close" md="md-close"></ion-icon>
-        </div>
-        <div class="UnderSBox"><br>
-          Rosyjski To Bardzo Sympatyczny Język
-        </div>
+  <div class="Position" *ngIf="closeNews == true">
+    <div class="FBox">
+      <div class="SBox">
+        Zapisy
+        <ion-icon (click)="CloseStatement()" id="close" ios="ios-close" md="md-close"></ion-icon>
+      </div>
+      <div class="UnderSBox"><br>
+        Rosyjski To Bardzo Sympatyczny Język
       </div>
     </div>
+  </div>
 
 
-    <div class="Week">
-      <div id="Day">
-        Dzisiaj
-        <span>{{ myDate | date:'dd - MM - yy' }}</span>
-      </div>
-      <div id="Day">
-        Jutro<br>
-      </div>
-      <div id="Day">
-        pojutrze
-      </div>
-      <div id="Day">
-        i tam daje
-        xD
-      </div>
-      <div id="Day">
-        Ok Ok
-      </div>
-      <div id="Day">
-        Ok
-      </div>
-      <div id="Day">
-        Oke ehh
-      </div>
+  <div class="Week">
+    <div id="Day">
+      Dzisiaj
+      <span>{{ myDate | date:'dd - MM - yy' }}</span>
     </div>
+    <div id="Day">
+      Jutro<br>
+    </div>
+    <div id="Day">
+      pojutrze
+    </div>
+    <div id="Day">
+      i tam daje
+      xD
+    </div>
+    <div id="Day">
+      Ok Ok
+    </div>
+    <div id="Day">
+      Ok
+    </div>
+    <div id="Day">
+      Oke ehh
+    </div>
+  </div>
 
-    <div class="EntriesEvent">
-      <div class="Event">
-        <div class="EventInfo"> Zapisy Na{{eve?.name}}
-        </div>
-        <span id="EventInfo">{{eve?.info}}</span>
+  <div class="EntriesEvent">
+    <div class="Event">
+      <div class="EventInfo"> Zapisy Na{{eve?.name}}
       </div>
-      <div>
-        <ion-icon (click)="Agree()" id="CheckBox" *ngIf="toggleCheckBox == false" ios="ios-square-outline" md="md-square-outline"></ion-icon>
-        <ion-icon (click)="Agree()" id="CheckBox" *ngIf="toggleCheckBox == true" ios="ios-checkbox" md="md-checkbox"></ion-icon>
-      </div>
+      <span id="EventInfo">{{eve?.info}}</span>
     </div>
-    <div class="SendButton">
-      <button ion-button block>Default</button>
+    <div>
+      <ion-icon (click)="Agree()" id="CheckBox" *ngIf="toggleCheckBox == false" ios="ios-square-outline" md="md-square-outline"></ion-icon>
+      <ion-icon (click)="Agree()" id="CheckBox" *ngIf="toggleCheckBox == true" ios="ios-checkbox" md="md-checkbox"></ion-icon>
     </div>
-    <div class="YourEventHistory">
-      <button ion-button full outline>Outline + Full</button>
-    </div>
-  </ion-content>
+  </div>
+  <div class="SendButton">
+    <button ion-button block>Default</button>
+  </div>
+  <div class="YourEventHistory">
+    <button ion-button full outline>Outline + Full</button>
+  </div>
+</ion-content>
