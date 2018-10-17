@@ -1,3 +1,73 @@
 page-contact {
+    .events {
+        height: 100%;
+    }
 
+    .head {
+        padding: 3%;
+        border-bottom: 1px solid #eeeeee;
+    }
+
+    .head-head {
+        font-size: 2.3rem;
+        font-weight: bold;
+    }
+
+    .contentt {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .week {
+        height: 55%;
+        padding-left: 8%;
+    }
+
+    .week-head {
+        padding: 4%;
+        padding-left: 0;
+        font-size: 5vw;
+        font-weight: bold;
+    }
+
+    .soon {
+        height: 45%;
+        padding-left: 8%;
+    }
+
+    .soon-head {
+        padding-bottom: 4%;
+        font-size: 5vw;
+        font-weight: bold;
+    }
+
+    .soon-position {
+        height: 65%;
+        width: 100%;
+        overflow: scroll;
+    }
+
+    .soon-content {
+        height: 100%;
+        width: 50%;
+    }
+
+    .soon-content-img {
+        padding: 5%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.3);
+        width: 20vh;
+        height: 20vh;
+        color: #ffffff;
+        border-radius: 3%;
+    }
+
+    .soon-span-header {
+        font-size: 6vw;
+        font-weight: bold;
+        margin-bottom: 3%;
+    }
 }

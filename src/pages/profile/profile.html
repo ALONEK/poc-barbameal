@@ -1,18 +1,67 @@
-<!--
-  Generated template for the ProfilePage page.
+<ion-content class="profile">
+    <div class="password-change-style" *ngIf="passwordChange == true">
+        <div class="password-change-position">
+            <div class="change-div-position">
+                <div class="password-change-content">
+                    <h2 class="password-change-head">Zmiana hasła</h2>
+                    <div class="password-change-textarea">
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
+                    </div>
+                </div>
+                <div class="password-change-buttons-div">
+                    <button class="password-change-button" ion-button (click)="passwordChangeButton()">Anuluj</button>
+                    <button class="password-change-button" ion-button (click)="passwordChangeButton()">Zapisz</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-  <ion-navbar>
-    <ion-title>Profil</ion-title>
-  </ion-navbar>
+    <div class="profile">
+        <div class="head">
+            <div class="head-head">
+                Profil
+            </div>
+            <div class="photo">
+                <ion-icon class="photo-position" name="warning"></ion-icon>
+            </div>
+        </div>
+        <div class="content">
+            >>>>>>> bcb81ec8228a56206f5a9380ea16547d5452ed9e
 
-</ion-header>
+            <ion-navbar>
+                <ion-title>Profil</ion-title>
+            </ion-navbar>
+            <div class="content-list">
+                <span class="content-list-position">
+                    <ion-label color="dark" class="content-list-position-text">Email:</ion-label>
+                    <button class="content-list-position-text-value-main">
+                        <ion-label class="content-list-position-text-value">filip@cos.io{{i?.email}}</ion-label>
+                        <label class="content-list-position-text-info">Zmień</label>
+                    </button>
+                </span>
+            </div>
 
+            <div class="content-list">
+                <div class="password-checker">
+                    <span class="content-list-position">
+                        <ion-label color="dark" class="content-list-position-text">Hasło:</ion-label>
+                        <button (click)="passwordChangeButton()" class="content-list-position-text-value-main">
+                            <ion-label color="dark" class="content-list-position-text-value">
+                                <span *ngIf="passwordshow == true">*********</span>
+                                <span *ngIf="passwordshow == false">Nwm{{i?.password}}</span>
+                            </ion-label>
+                            <label class="content-list-position-text-info">Zmień</label>
+                        </button>
+                    </span>
+                    <div class="password-button-main">
+                        <button (click)="passwordShowButton()" class="password-button">
+                            <ion-icon name="eye" *ngIf="passwordshow == true"></ion-icon>
+                            <ion-icon name="eye-off" *ngIf="passwordshow == false"></ion-icon>
+                        </button>
+                    </div>
+                </div>
+            </div>
 
-<ion-content padding>
+            <ion-content padding>
 
-</ion-content>
+            </ion-content>
