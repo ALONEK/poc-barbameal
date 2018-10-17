@@ -14,16 +14,17 @@ export class AboutPage {
     this.myDate = Date.now();
   }
   // ###Header###
-  help() {}
-  calendary() {}
+  help() { }
+  calendary() { }
   // ###statement###
   CloseStatement() {
     this.closeNews = !this.closeNews;
   }
   // ###Weeks###
-  SwipeWeek(e) {}
+  SwipeWeek(e) { }
   // ###Event###
   Agree() {
     this.toggleCheckBox = !this.toggleCheckBox;
+    console.log("tak", this.toggleCheckBox)
   }
 }
